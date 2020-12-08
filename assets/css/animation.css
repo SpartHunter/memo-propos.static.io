@@ -1,0 +1,77 @@
+@keyframes slide_show{
+    /* 0%{
+        height: 10%;
+    }
+    10%{
+        height: 20%;
+    }
+    20%{
+        height: 30%;
+    }
+    30%{
+        height: 40%;
+    }
+    40%{
+        height: 50%;
+    }
+    50%{
+        height: 60%;
+    }
+    60%{
+        height: 61%;
+    }
+    70%{
+        height: max-content;
+    }
+    80%{
+        height: max-content;
+    }
+    90%{
+        height: max-content;
+    }
+    100%{
+        height: max-content;
+    } */
+    from{
+        height: 45%;
+    }
+    to{
+        height: 45%;
+    }
+}
+
+@keyframes reduce_translateY{
+    0%{
+        transform: translateY(500%);
+    }
+    10%{
+        transform: translateY(400%);
+    }
+    20%{
+        transform: translateY(350%);
+    }
+    30%{
+        transform: translateY(300%);
+    }
+    40%{
+        transform: translateY(250%);
+    }
+    50%{
+        transform: translateY(200%);
+    }
+    60%{
+        transform: translateY(150%);
+    }
+    70%{
+        transform: translateY(100%);
+    }
+    80%{
+        transform: translateY(50%);
+    }
+    90%{
+        transform: translateY(0%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}

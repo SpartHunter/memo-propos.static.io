@@ -1,0 +1,54 @@
+@font-face {
+    font-family: "bold";
+    src: url("../fonts/bold.ttf");
+}
+@font-face {
+    font-family: "book";
+    src: url("../fonts/book.ttf");
+}
+@font-face {
+    font-family: "heavy";
+    src: url("../fonts/heavy.ttf");
+}
+@font-face {
+    font-family: "light";
+    src: url("../fonts/light.ttf");
+}
+@font-face {
+    font-family: "medium";
+    src: url("../fonts/medium.ttf");
+}
+@font-face {
+    font-family: "thin";
+    src: url("../fonts/thin.ttf");
+}
+
+.font-bold{
+    font-family: "bold", sans-serif !important;
+    font-weight: bold !important;
+    letter-spacing: 0.1vw;
+  }
+  
+  .font-book{
+    font-family: "book", sans-serif !important;
+    letter-spacing: 0.1vw;
+    font-size: 1rem;
+  }
+  
+  .font-heavy{
+    font-family: "heavy", sans-serif !important;
+    letter-spacing: 0.1vw;
+    font-size: 1rem;
+  }
+  
+  .font-medium{
+    font-family: "medium", sans-serif !important;
+    letter-spacing: 0.1vw;
+    font-size: 1rem;
+  }
+  
+  .font-light{
+    font-family: "light", sans-serif !important;
+    letter-spacing: 0.1vw;
+    font-size: 1rem;
+  }

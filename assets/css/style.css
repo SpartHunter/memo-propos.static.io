@@ -1,0 +1,776 @@
+/* Global Css configue */
+.navbar{
+    box-shadow: 0px -2px 1px 2px white;
+    background-color: black;
+    padding: 0 !important;
+}
+
+.logo-brand{
+    width: 7rem;
+}
+
+.navbar-toggler{
+    border: none;
+}
+
+.navbar-toggler img, .nav-link img{
+    width: 2.5em;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color:white;
+    margin: 0 10px;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color:red;
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+    color:red;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover svg{
+    fill:red;
+}
+
+.navbar-dark .navbar-nav .nav-link.active svg{
+    fill:red;
+}
+
+.vid-fullscreen{
+    max-height: calc(100vh - 3rem);
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.vid-content.row, .vid-content.row video{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.vid-content, .vid-content video, .container-video, .container-video video{
+    max-height: inherit;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.container-video.col-12.col-md-9, .container-video.col-12.col-md-9{
+    max-height: calc(100vh - 9rem);
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.img-text img{
+    width: 4em;
+    position: relative;
+    bottom: 3px;
+}
+
+.infos-content.content-invisible{
+    background-color: transparent;
+    box-shadow:  none;
+    overflow: hidden;
+    transition: all 0.6s ease;
+}
+
+.infos-content.content-invisible:hover{
+    background-color: rgba(0,0,0,0.65);
+}
+
+.infos-content.content-visible{
+    background-color: rgba(0,0,0,0.65);
+}
+
+.infos-content.black-content{
+    background-color: black;
+    box-shadow: none;
+}
+
+.info-text .info-play{
+    background-color: transparent;
+    border: none;
+}
+
+.container-video:hover .info-play.propos-button img{
+    top: 0;
+    visibility: visible;
+} 
+
+.infos-content.content-invisible article.info-text.info-up{
+    display: flex;
+    overflow: hidden;
+    height: 45%;
+}
+
+.infos-content.content-invisible article.info-text.info-up > *{
+    transform: translateY(500%);
+}
+
+.infos-content.content-invisible:hover article.info-text.info-up{
+    animation: slide_show 0.4s ease-in 0s 1 alternate forwards;
+} 
+
+.infos-content.content-invisible:hover article.info-text.info-up > *{
+    animation: reduce_translateY 0.4s ease-in 0s 1 alternate forwards;
+}
+
+.infos-content.content-visible article.info-text.info-up{
+    animation: slide_show 0.4s ease-in 0s 1 alternate forwards;
+} 
+
+.infos-content.content-visible article.info-text.info-up > *{
+    animation: reduce_translateY 0.4s ease-in 0s 1 alternate forwards;
+}
+
+.backs-links{
+    position: fixed;
+    width: max-content;
+    bottom: 3vh;
+    right: 0;
+}
+
+.backs-items{
+    list-style: none;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.backs-items .item svg{
+    width: calc(0.9rem + 0.5vw);
+    padding: 10px 0;
+    fill: white;
+}
+
+.backs-items .item:hover svg{
+    width: calc(0.9rem + 0.5vw);
+    padding: 10px 0;
+    fill: red;
+}
+
+.logo-items .video-link {
+    width: max-content;
+    height: max-content;
+}
+
+.para-logo img{
+    width: calc(6rem + 1vw);
+}
+
+.para-text{
+    font-size: calc(1rem + 0.5vw) !important;
+}
+
+.input-group{
+    width: 80%;
+}
+
+.input-group input{
+    width: 100% !important;
+}
+
+.form-textarea{
+    width: 100%;
+    height: 100%;
+}
+
+ul.list-derived{
+    padding: 0 !important;
+}
+
+.derived-item .title-img{
+    margin-bottom: 2rem;
+    width: calc(12rem + 1vw);
+}
+
+.img-derived img{
+    width: calc(10rem + 20vw);
+}
+
+.derived-item{
+    margin-top: 5rem;
+}
+
+.derived-invisible{
+    visibility: hidden;
+}
+
+.tex-box.ml-4.mr-4 p, .mesure-box p {
+    font-size: calc(0.7rem + 0.5vw);
+}
+
+.tex-box p, .mesure-box p{
+    margin: 0;
+}
+
+.divers-box img{
+    transform: translateX(100px);
+    visibility: hidden;
+    transition: all 0.6s ease-out;
+}
+
+.divers-box.anim img{
+    transform: translateX(0px);
+    visibility: visible;
+}
+
+.propos-button img{
+    transform: translatey(80px);
+    visibility: hidden;
+    transition: all 0.6s ease-out;
+}
+
+.info-text .propos-button.anim img{
+    transform: translatey(0px);
+    visibility: visible;
+}
+
+.fullscreen_button{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    border: none;
+}
+
+.full_button{
+    background-color: transparent;
+    border: none;
+    visibility: hidden;
+}
+
+/*Css Configue only for chrome and safari*/
+@media screen and (-webkit-min-device-pixel-ratio:1.0) {
+    form article button{
+        width: max-content;
+        height: 50px;
+        font-size: calc(1rem + 0.3vw) !important;
+        border: 1px solid red !important;
+        background-color: transparent;
+    }
+}
+
+/*Css Configue only for firefox*/
+@-moz-document url-prefix() {
+    form article button{
+        width: 110px;
+        height: 50px;
+        font-size: calc(0.5rem + 0.5vw) !important;
+        border: 1px solid red !important;
+        background-color: transparent;
+    }
+}
+
+form article button:active{
+    background-color: red;
+}
+
+/*Global Css Configue for title slogan text in home page for intervale width: 279 to 991px*/
+@media(min-width: 279px) and (max-width: 991px){
+
+    /*Css Configue for intervale width: 279 to 991px*/
+    .nav.navbar-nav.ml-auto{
+        /* height: 100vh; */
+        background-color: rgba(0,0,0,0.90);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-link.font-bold, .nav-link{
+        font-size: medium;
+        margin: 1.5rem 0 1.5rem 0;
+    }
+
+    .speech-text{
+        margin: 3.5vh 0 3.5vh 0;
+        padding: 0 1.5rem 0 1.5rem;
+    }
+
+    /*Css configue for intervale width 279 to 500px*/
+    @media(min-width: 279px) and (max-width: 500px){
+        .speech-text h1{
+            line-height: 2.5rem;
+            margin: 0;
+        }
+
+        /*Css Configue only for chrome and safari*/
+        @media screen and (-webkit-min-device-pixel-ratio:1.0) { 
+            .sple-text, .img-text {
+                font-size: calc(0.5rem + 1.5vw);
+            }
+        }
+
+        /*Css Configue only for firefox*/
+        @-moz-document url-prefix() {
+            .sple-text, .img-text {
+                font-size: calc(0.7rem + 0.5vw);
+            }
+
+            /*Css configue for intervale width 280 to 300px*/
+            @media(min-width: 280px) and (max-width: 300px){
+                .sple-text, .img-text {
+                    font-size: calc(0.901rem + 0.5vw);
+                }
+            }
+          }
+
+          /*Css configue for intervale width 383 to 500px*/
+          @media(min-width: 383px) and (max-width: 500px){
+            @media screen and (-webkit-min-device-pixel-ratio:1.0) { 
+                .speech-text{
+                    padding: 0 1.5rem 0 1.5rem;
+                }
+            }
+
+            /*Css Configue only for firefox*/
+            @-moz-document url-prefix() {
+                .speech-text{
+                    padding: 0 2rem 0 2rem;
+                }
+            }
+        }
+
+            /*Css configue for intervale width 383 to 500px*/
+        @media(min-width: 364px) and (max-width: 442px){
+            @media screen and (-webkit-min-device-pixel-ratio:1.0) { 
+                .speech-text{
+                    padding: 0 3.5rem 0 3.5rem;
+                }
+            }
+
+            /*Css Configue only for firefox*/
+            @-moz-document url-prefix() {
+                .speech-text{
+                    padding: 0 2rem 0 2rem;
+                }
+            }
+        }
+
+    }
+
+    /* Css Configue for title slogan text in home page for intervale width: 501 to 991px*/
+    @media(min-width: 501px) and (max-width: 991px){
+        .speech-text h1{
+            line-height: 2.5rem;
+            margin: 0;
+        }
+
+        @media(min-width: 501px){
+            .sple-text, .img-text {
+                font-size: calc(0.5rem + 1.5vw);
+            }
+        }
+
+        @media(min-width: 574px){
+            .sple-text, .img-text {
+                font-size: calc(1rem + 0.5vw);
+            }
+        }
+
+
+
+         /*Css Configue only for chrome and safari*/
+        @media screen and (-webkit-min-device-pixel-ratio:1.0) {
+            .speech-text{
+                padding: 0 2rem 0 2rem;
+            }
+
+            /* .sple-text, .img-text {
+                font-size: calc(1rem + 0.5vw);
+            } */
+
+            @media(min-width: 520px){
+                .speech-text{
+                    padding: 0 2rem 0 2rem;
+                }
+            }
+
+            @media(min-width: 589px){
+                .speech-text{
+                    padding: 0 2rem 0 2rem;
+                }
+            }
+
+            @media(min-width: 624px){
+                .speech-text{
+                    padding: 0 2rem 0 2rem;
+                }
+            }
+
+            @media(min-width: 658px){
+                .speech-text{
+                    padding: 0 2rem 0 2rem;
+                }
+            }
+
+            @media(min-width: 819px){
+                .speech-text{
+                    padding: 0 0.5rem 0 0.5rem;
+                }
+
+                .speech-text h1{
+                    margin: 10px 0;
+                }
+            }
+        }
+
+        /*Css Configue only for firefox*/
+        @-moz-document url-prefix() {
+            .speech-text{
+                padding: 0 2rem 0 2rem;
+            }
+
+            .sple-text, .img-text {
+                font-size: calc(1rem + 1vw);
+            }
+
+            @media(min-width: 520px){
+                .speech-text{
+                    padding: 0 4rem 0 4rem;
+                }
+            }
+
+            @media(min-width: 589px){
+                .speech-text{
+                    padding: 0 5rem 0 5rem;
+                }
+            }
+
+            @media(min-width: 624px){
+                .speech-text{
+                    padding: 0 6rem 0 6rem;
+                }
+            }
+
+            @media(min-width: 658px){
+                .speech-text{
+                    padding: 0 8rem 0 8rem;
+                }
+            }
+
+            @media(min-width: 860px){
+                .speech-text{
+                    padding: 0 0.5rem 0 0.5rem;
+                }
+
+                .speech-text h1{
+                    margin: 10px 0;
+                }
+            }
+
+          }
+    }
+}
+
+/*Global Css For Elements on box-video for interval 279 to 991px*/
+@media(min-width: 279px) and (max-width: 991px){
+
+    .infos-content{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    .container-video{
+        margin: calc(0.5rem + 1vh) 0;
+        padding: 0;
+    }
+
+    .info-text h1{
+        font-size: calc(0.931rem + 1vw);
+        padding: 0;
+        margin: 0;
+    }
+
+    /*Css Configue only for chrome and safari*/
+    @media screen and (-webkit-min-device-pixel-ratio:1.0) {
+        .info-text p{
+            font-size: calc(0.6rem + 1.4vw);
+            padding: 0;
+            margin: calc(1.5rem + 1vw) 0;
+        }
+
+        .infos-content .info-text .info-play img{
+            width: calc(2rem + 3vw);
+        }
+    }
+
+    /*Css Configue only for firefox*/
+    @-moz-document url-prefix() {
+        .info-text p{
+            font-size: calc(0.6rem + 1.4vw);
+            padding: 0;
+            margin: calc(0.75rem + 1vw) 0;
+        }
+
+        .infos-content .info-text .info-play img{
+            width: calc(2rem + 1.5vw);
+        }
+    }
+
+    @media(min-width: 342px){
+        /*Css Configue only for firefox*/
+        @-moz-document url-prefix() {
+            .info-text p{
+                font-size: calc(0.51rem + 1.13vw);
+            }
+        }
+    }
+
+    @media(min-width: 342px){
+        .infos-content{
+            padding: 2rem 0;
+        }
+    }
+
+    @media(min-width: 450px){
+        .info-text{
+            width: 80%;
+        }
+    }
+
+    @media(min-width: 500px){
+        /*Css Configue only for chrome and safari*/
+        @media screen and (-webkit-min-device-pixel-ratio:1.0) {
+            .info-text p{
+                font-size: calc(0.6rem + 1.2vw);
+                padding: 0;
+                margin: calc(1.50rem + 1vw) 0;
+            }
+
+            .infos-content .info-text .info-play img{
+                width: calc(2rem + 1.6vw);
+            }
+        }
+
+        /*Css Configue only for firefox*/
+        @-moz-document url-prefix() {
+            .info-text p{
+                font-size: calc(0.6rem + 0.80vw);
+                padding: 0;
+                margin: calc(0.75rem + 1vw) 0;
+            }
+
+            .infos-content .info-text .info-play img{
+                width: calc(2rem + 1.5vw);
+            }
+        }
+    }
+
+    @media(min-width: 768px){
+        .infos-content{
+            padding: 0;
+        }
+
+        .info-text{
+            width: 90%;
+        }
+
+        /*Css Configue only for chrome and safari*/
+        @media screen and (-webkit-min-device-pixel-ratio:1.0) {
+            .info-text p{
+                font-size: calc(0.5rem + 0.75vw);
+                padding: 0;
+                margin: calc(0.50rem + 1vw) 0;
+            }
+        }
+    }
+}
+
+/*Global Css For logo elements on client page for interval 279 to 991px*/
+@media(min-width: 279px) and (max-width: 991px){
+
+    .logo-clients, .logo-clients .logo-items article{
+        margin: calc(2rem + 1vw) 0;
+    }
+
+    .logo-items .video-link img{
+        width: calc(5rem + 10vw);
+    }
+
+    .logo-items .video-link img.link-6-resized{
+        width: calc(5rem + 1.5vw);
+    }
+
+    /*Css Configue only for firefox*/
+    @-moz-document url-prefix() {
+        .logo-items .video-link img{
+            width: calc(4rem + 15vw);
+        }
+    }
+
+    @media(min-width: 768px){
+        .logo-items .video-link img{
+            width: calc(5rem + 5vw);
+        }
+
+        .logo-items .video-link img.link-6-resized{
+            width: calc(5rem + 1.5vw);
+        }
+    }
+}
+
+/*Global Css For icons elements on propos page for interval 279 to 991px*/
+@media(min-width: 279px) and (max-width: 991px){
+    .info-text .info-play.propos-button img {
+        width: calc(2.3rem + 7.5vw);
+    }
+
+    .mesure-derived{
+        position: relative;
+        top: 10px;
+    }
+
+    @media(min-width: 768px){
+        .info-text .info-play.propos-button img {
+            width: calc(2.3rem + 3.5vw);
+        }
+    }
+}
+
+/*Global Css for Copyright text from 279 to 768px*/
+@media(min-width: 279px) and (max-width: 5000px){
+    .copyright-content{
+        margin: 2rem 0 0 0;
+    }
+
+    .copyright-content .row h1{
+        font-size: calc(0.15rem + 0.8vw);
+        line-height: 20px;
+    }
+
+    /*Css for Copyright text from 768 and higher*/
+    @media(min-width: 768px){
+        .copyright-content{
+            margin: 2.5rem 0 0 0;
+        }
+
+        .copyright-content .row h1{
+            font-size: calc(0.10rem + 0.8vw);
+            line-height: 20px;
+        }
+    }
+
+    @media(min-width: 992px){
+        .copyright-content .row h1{
+            font-size: calc(0.10rem + 0.5vw);
+            line-height: 20px;
+        }
+    }
+}
+
+/*Global Css Configue for textarea in 279 and higherr*/
+@media(min-width: 279px){
+    .form-textarea textarea{
+        height: 230px;
+    }
+}
+
+/*Global Css Configue for textarea in 768px and higherr*/
+@media(min-width: 768px){
+    .form-textarea textarea{
+        height: calc(100% - 60px);
+    }
+}
+
+/*Global Css Configue for all screen from 991px and higher*/
+@media(min-width: 991px){
+    .speech-text{
+        margin: 5em 0 5em 0;
+        padding: 0 2vw 0 2vw;
+    }
+
+    .speech-text h1{
+        margin: 15px 0;
+    }
+
+    .sple-text, .img-text {
+        font-size: calc(1rem + 1vw);
+    }
+
+    .infos-content{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        padding: 1rem;
+    }
+
+    .container-video{
+        margin: calc(0.5rem + 1vh) 0;
+        padding: 0;
+    }
+
+    .info-text{
+        width: 90%;
+    }
+
+    .info-text h1{
+        font-size: calc(0.931rem + 1vw);
+        padding: 0;
+        margin: 0;
+    }
+
+    /*Css Configue only for chrome and safari*/
+    @media screen and (-webkit-min-device-pixel-ratio:1.0) {
+        .info-text p{
+            margin: calc(1.5rem + 1vw) 0;
+            font-size: calc(0.5rem + 0.60vw);
+        }
+    }
+
+    /*Css Configue only for firefox*/
+    @-moz-document url-prefix() {
+        .info-text p{
+            margin: calc(1.5rem + 1vw) 0;
+        }
+    }
+
+    .logo-clients, .logo-clients .logo-items article{
+        margin: calc(2rem + 1vw) 0;
+    }
+
+    .logo-items .video-link img{
+        width: calc(5rem + 5vw);
+    }
+
+    .logo-items .video-link img.link-6-resized{
+        width: calc(5rem + 1.5vw);
+    }
+
+    .info-text .info-play.propos-button img {
+        width: calc(1.3rem + 4vw);
+    }
+
+}
+
+@media(min-width: 992px){
+    .text-derived.col-lg-4{
+        flex: 0 0 42.333333%;
+        max-width: 42.333333%;
+    }
+
+    .mesure-derived{
+        position: relative;
+        top: 50px;
+    }
+
+    .derived-item.mtsp-8{
+        margin-top: 8rem;
+    }
+}
+
+/*Global Css Configue for all screen from 991px and higher*/
+@media(min-width: 1500px){
+    .info-text{
+        width: calc(100% - 12rem);
+    }
+
+    /*Css Configue only for chrome and safari*/
+    @media screen and (-webkit-min-device-pixel-ratio:1.0) {
+        .info-text p{
+            margin: calc(1.5rem + 1vw) 0;
+            font-size: calc(0.5rem + 0.60vw);
+        }
+    }
+}

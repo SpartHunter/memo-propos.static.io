@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+    outline: none;
+}
+
+*:active, *:hover, *:focus{
+    outline: none;
+}
+
+body{
+    padding-top: 3rem;
+    margin: 0;
+    font-family: "light", "medium", "heavy", "book", "bold", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: white;
+    text-align: left;
+    background-color: black;
+}
+
+img{
+    width: calc(2.3rem + 1vw);
+}
+
+button, input, button:active, button:hover, button:focus, input:active, input:hover, input:focus{
+    outline: none;
+}
+
+.mb-6{
+    margin-bottom: 40px;
+}
+
+.mts-4{
+    margin-top: 4rem !important;
+}
+
+.mls-3{
+    margin-left: 3rem !important;
+}
+
+.mrs-4{
+    margin-right: 1.5rem !important;
+}
+
+.mtsimg-35{
+    margin: 35px 0 0 0;
+}
+
+.break-10{
+    height: calc(2rem + 0.5vh);
+}
+
+.fit-contain{
+    object-fit: contain !important;
+}
+
+.color-red{
+    color: red;
+}
+
+@media(min-width: 279px) and (max-width: 500px){
+    body{
+        padding-top: 8.4em;
+    }
+
+    .dn-500{
+        display: none;
+    }
+
+    .mls-3{
+        margin-left: 0.5rem !important;
+    }
+
+    .mrs-4{
+        margin-right: 0.5rem !important;
+    }
+
+    .mls-3.mrs-4 p{
+        font-size: calc(0.7rem + 0.2vw);
+    }
+
+    article.info-text.text-center.d-flex.flex-column.justify-content-start {
+        padding: 0 1.5rem;
+    }
+
+    .flex-column-500{
+        flex-direction: column;
+    }
+
+    .logo-brand-500{
+        width: 5rem !important;
+    }
+
+    .nav-link-500{
+       font-size: medium !important;
+    }
+    
+    .nav-link-500 svg{
+        position: relative;
+        bottom: 2px;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .mt-500{
+        margin: 17px 0 0 0;
+    }
+}
+
+@media(min-width: 768px){
+    .break-8{
+        height: calc(0.1rem + 0.5vh);
+    }
+}
+
+@media(min-width: 992px){
+    .break-8{
+        height: calc(1rem + 1vh);
+    }
+
+    .col-lg-s-3{
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 40%;
+    }
+}
+
+@media(min-width: 279px) and (max-width: 991px){
+    .smm{
+        margin: 20px 0;
+    }
+}
